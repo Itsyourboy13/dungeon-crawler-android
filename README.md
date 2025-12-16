@@ -1,31 +1,81 @@
-<strong>**DO NOT DISTRIBUTE OR PUBLICLY POST SOLUTIONS TO THESE LABS. MAKE ALL FORKS OF THIS REPOSITORY WITH SOLUTION CODE PRIVATE. PLEASE REFER TO THE STUDENT CODE OF CONDUCT AND ETHICAL EXPECTATIONS FOR COLLEGE OF INFORMATION TECHNOLOGY STUDENTS FOR SPECIFICS. **</strong>
+# Dungeon Crawler - Android Game
 
-# WESTERN GOVERNORS UNIVERSITY 
-## D424 – SOFTWARE ENGINEERING CAPSTONE
-Welcome to Software Engineering Capstone! This is an opportunity for students to develop full stack software engineering documentation and applications. They will execute documentation, unit testing, revision of software applications, and deploy software applications with scripts and containers on a cloud platform.
+A turn-based dungeon crawler game for Android, built with Java in Android Studio. Explore procedurally generated levels, battle monsters, manage health and potions, level up your character, and aim for the high score!
 
-FOR SPECIFIC TASK INSTRUCTIONS AND REQUIREMENTS FOR THIS ASSESSMENT, PLEASE REFER TO THE COURSE PAGE.
-BASIC INSTRUCTIONS
-For this assessment, you will deploy your developed full stack software product to a web service of your choice.
+This was my software engineering capstone project — a complete mobile game demonstrating game logic, UI controls, player progression, and clean Android architecture.
+
+## Download & Play
+
+**Latest APK**: [Download Dungeon Crawler APK](dungeon-crawler.apk) (~50 MB)
+
+**Requirements**:
+- Android 12+ (API 31+)
+- 50 MB free storage
+- Allow "Install from unknown sources" (one-time setting)
+
+**Installation**:
+1. Download the APK from the link above.
+2. Open the file on your device.
+3. Follow the prompts to install.
+
+## How to Play
+
+### Home Screen
+- View your highest and recent scores.
+- Tap **Start Game** to begin.
+- Tap **Help** for instructions.
+
+### Gameplay
+- **Player**: Blue circle — move using on-screen directional buttons.
+- **Monsters**: Red circles — battles start automatically on contact.
+- **HP Bar** (green): Track your health. Use potions to heal (up to 4).
+- **XP Bar** (yellow): Gain XP from battles to level up and improve stats.
+- **Camera**: Pinch to zoom (1x–3x), drag to pan.
+- **UI Toggle**: Tap the screen to show/hide controls (auto-hides after 3 seconds).
+
+### Winning & Game Over
+- Clear all monsters on a level to advance.
+- Game ends if HP reaches 0 — submit your score to the leaderboard.
+
+### Tips
+- Plan moves carefully to avoid fighting multiple monsters at once.
+- Save potions for when HP is critically low.
+- Level up to gain better stats and more potions.
 
 
-## SUPPLEMENTAL RESOURCES  
-1.	How to clone a project to IntelliJ using Git?
+## Developer Guide (For Contributors or Reviewers)
 
-> Ensure that you have Git installed on your system and that IntelliJ is installed using [Toolbox](https://www.jetbrains.com/toolbox-app/). Make sure that you are using version 2022.3.2. Once this has been confirmed, click the clone button and use the 'IntelliJ IDEA (HTTPS)' button. This will open IntelliJ with a prompt to clone the proejct. Save it in a safe location for the directory and press clone. IntelliJ will prompt you for your credentials. Enter in your WGU Credentials and the project will be cloned onto your local machine.  
+### Prerequisites
+- Android Studio 2023.2.1 or later
+- JDK 17
+- Android SDK API 36
 
-2. How to create a branch and start Development?
+### Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Itsyourboy13/dungeon-crawler-android.git
+   cd dungeon-crawler-android
+   
+2. Open the project in Android Studio
+3. Sync Gradle and build the project
 
-- GitLab method
-> Press the '+' button located near your branch name. In the dropdown list, press the 'New branch' button. This will allow you to create a name for your branch. Once the branch has been named, you can select 'Create Branch' to push the branch to your repository.
+### Running Tests
+- Unit tests are in `PlayerTest.java`
+- Run `PlayerTest.java` to verify some of the core logic
 
-- IntelliJ method
-> In IntelliJ, Go to the 'Git' button on the top toolbar. Select the new branch option and create a name for the branch. Make sure checkout branch is selected and press create. You can now add a commit message and push the new branch to the local repo.
+### Building the APK
+- Build → Build Bundle(s) / APK(s) → Build APK
 
-## SUPPORT
-If you need additional support, please navigate to the course page and reach out to your course instructor.
+## Tech & Features Demonstrated
+- Java Android development
+- Custom views (DungeonView)
+- Game loop and turn-based mechanics
+- Player progression (XP, leveling, potions)
+- Touch controls (directional buttons, pinch zoom, drag pan)
+- Score tracking and UI auto-hide
+- Clean architecture with tests
 
-## FUTURE USE
-Take this opportunity to create or add to a simple resume portfolio to highlight and showcase your work for future use in career search, experience, and education!
-
-VideoTest1
+## NOTES
+This game was developed as a capstone project. The source code is shared for portfolio and learning purposes.
+Feel free to explore the code, run the game, or reach out with feedback!
+Thanks for playing!
